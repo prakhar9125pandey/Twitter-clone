@@ -1,0 +1,258 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a,
+nav ul li button {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+  color: #f1f1f1;
+}
+
+/* Form Styles */
+.auth-form,
+.tweet {
+  background: #fff;
+  padding: 2rem;
+  margin: 5rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.auth-form h2,
+.tweet p {
+  margin-bottom: 1rem;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-form button {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0a85d0;
+}
+
+/* Tweet Styles */
+.tweet p {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li button {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+  color: #f1f1f1;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu when the button is clicked */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+
+.tweet-list {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.tweet {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-content {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-user {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.tweet-username {
+  font-weight: bold;
+}
+
+.tweet-date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
